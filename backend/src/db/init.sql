@@ -1,0 +1,10 @@
+CREATE DATABASE items;
+
+CREATE TABLE
+    routes (
+        id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        name VARCHAR(255) NOT NULL,
+        count int NOT NULL,
+        distance int NOT NULL
+    ) COMMENT '';
